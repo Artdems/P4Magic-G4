@@ -12,7 +12,7 @@ public class DisappearEffect extends Effect {
 
     
     /**
-     * 
+     * this effect empties the tile it's played on
      * @param line
      * @param column
      * @param game 
