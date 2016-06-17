@@ -10,12 +10,20 @@ package model;
  */
 public class DisappearEffect extends Effect {
 
+    
     /**
-     * TODO
+     * 
+     * @param line
+     * @param column
+     * @param game 
      */
     @Override
     public void playEffect(int line, int column, Game game) {
-
+            int tile_id = game.getBoard().getTileIJ(line, column).getStatus();
+            if (tile_id != -1){
+                game.getBoard().getTileIJ(line, column).setStatus(-1);
+            }
+            
     }
 
 }
